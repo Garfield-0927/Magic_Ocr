@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data-Magic OCR</title>
+  <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+  <link rel="stylesheet" href="../static/css/show.css">
+  <link rel="icon" href="../static/img/logo.jpg" />
+</head>
+
+<body>
+  <!-- vue template -->
+  <div id='app'>
+    <!-- 使用方法 -->
+    <div class="usage">
+      <div class="usage_title">
+        使用方法
+      </div>
+      <div class="usage_text">
+        <div class="usage_item">
+          <img src="../static/img/step-1.png" class="usageImage">
+          <div>
+            <p>上传图片</p>
+          </div>
+        </div>
+        <div class="usage_item">
+          <img src="../static/img/step-2.png" class="usageImage">
+          <div>
+            <p>进行识别</p>
+          </div>
+        </div>
+        <div class="usage_item">
+          <img src="../static/img/step-3.png" class="usageImage">
+          <div>
+            <p>得到结果</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 功能演示 -->
+    <div class="funshow">
+      <div class="funshow_title">
+        功能演示
+      </div>
+      <div class="upload_img">
+        <span>上传图片(png/jpg) : </span>
+        <div class="selectfile">
+          <input type="file">
+        </div>
+        
+      </div>
+      <button type="submit" class="start">开始</button>
+
+      <div class="showimgAndresults">
+        <div class="showImg">
+          <div class="content">
+            <p>图片预览</p>
+            <img src="">
+          </div>
+        </div>
+
+        <div class="showRes">
+          <div class="content">
+            <p>识别结果</p>
+            <div class="result"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- 相关推荐 -->
+    <div class="recommend">
+      <div class="recommend_title">
+        相关推荐
+      </div>
+
+      <div class="recommentContent">
+        <div class="Contentwrapper">
+          <div class="ContentItem" >
+            <div class="dec"></div>
+            <div class="big">
+              <a href="https://ai.baidu.com/solution/censoring">通用文字识别</a>
+            </div>
+            <div class="small">基于业界领先的深度学习技术，提供多场景、多语种、高精度的整图文字检测和识别服务</div>
+          </div>
+        </div>
+        <div class="Contentwrapper">
+          <div class="ContentItem" >
+            <div class="dec"></div>
+            <div class="big">
+              <a href="https://ai.baidu.com/tech/imagecensoring">图像审核</a>
+            </div>
+            <div class="small">准确识别图片和视频中的涉黄、涉暴涉恐、政治敏感、广告、恶心等内容，解放审核人力</div>
+          </div>
+        </div>
+        <div class="Contentwrapper">
+          <div class="ContentItem" >
+            <div class="dec"></div>
+            <div class="big">
+              <a href="https://ai.baidu.com/solution/censoring">内容审核解决方案</a>
+            </div>
+            <div class="small">通过界面化、直观的操作，5分钟完成审核规则配置，包括审核项、松紧度、图像/文本的黑白名单、自定义敏感人物，有效管控业务违规风险</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
