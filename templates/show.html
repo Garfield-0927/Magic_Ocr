@@ -61,7 +61,7 @@
         <div class="showImg">
           <div class="content">
             <p>图片预览</p>
-            <div class="img">
+            <div class="image">
               <img src="{{img_path}}">
             </div>
           </div>
@@ -70,7 +70,11 @@
         <div class="showRes">
           <div class="content">
             <p>识别结果</p>
-            <div class="result"></div>
+            <div class="result">
+              {% for res in res %}
+              <div style="margin-left: 12px; margin-bottom: 10px;">{{ res }}</div>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
