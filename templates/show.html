@@ -46,20 +46,24 @@
       <div class="funshow_title">
         功能演示
       </div>
-      <div class="upload_img">
-        <span>上传图片(png/jpg) : </span>
-        <div class="selectfile">
-          <input type="file">
+      <form  method="post" enctype="multipart/form-data">
+        <div class="upload_img">
+          <span>上传图片(png/jpg): </span>
+          <div class="selectfile">
+            <input type="file" name="file">
+          </div>
         </div>
-        
-      </div>
-      <button type="submit" class="start">开始</button>
+        <button type="submit" class="start">开始</button>
+      </form>
+
 
       <div class="showimgAndresults">
         <div class="showImg">
           <div class="content">
             <p>图片预览</p>
-            <img src="">
+            <div class="img">
+              <img src="{{img_path}}">
+            </div>
           </div>
         </div>
 
