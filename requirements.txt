@@ -1,0 +1,7 @@
+flask
+werkzeug.utils
+request
+json
+cv2
+base64
+os
