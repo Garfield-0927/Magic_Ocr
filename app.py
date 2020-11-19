@@ -55,13 +55,13 @@ def show():
             url = "http://127.0.0.1:8866/predict/chinese_ocr_db_crnn_mobile"
             r = requests.post(url=url, headers=headers, data=json.dumps(data))
             results = (r.json()["results"])
-            print(results[0])
+            # print(results[0])
 
             res = []
             for item in results[0]['data']:
                 res.append(item['text'])
 
-            print(res)
+            # print(res)
             return render_template('show.html', img_path=img_path, res=res)
     return render_template('show.html')
 

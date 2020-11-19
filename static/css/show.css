@@ -141,9 +141,13 @@
     margin-left: 0;
     width: 380px;
     height: 400px;
+
+    
 }
 
 .showRes p{
+    position: sticky;
+    top: 0;
     height:30px;
     line-height: 30px;
     width: 100%;
@@ -159,6 +163,10 @@
     height: 100%;
     border: solid 1px #053664;
     margin: 0 auto;
+    overflow-x:auto;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word; 
 }
 
 .image{
